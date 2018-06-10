@@ -90,7 +90,6 @@ public class WallCommandTest {
 		
 		spyuser.addFollowing(spyuser2);
 		
-
 		doReturn(spyuser).when(repository).getOrCreateUser(USER);
 		
 		command.execute(COMMAND);

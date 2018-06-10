@@ -9,6 +9,7 @@ public interface AppConsole {
 	 * 
 	 * @param post
 	 *            The post to be displayed.
+	 *            
 	 */
 	public void displayPostForWall(Post post);
 
@@ -17,6 +18,7 @@ public interface AppConsole {
 	 * 
 	 * @param post
 	 *            The post to be displayed.
+	 *            
 	 */
 	public void displayPostForUser(Post post);
 
@@ -25,6 +27,7 @@ public interface AppConsole {
 	 * 
 	 * @param message
 	 *            The message to be displayed.
+	 *            
 	 */
 	public void displayMessage(String message);
 

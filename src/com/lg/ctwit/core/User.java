@@ -5,6 +5,11 @@ import java.util.List;
 
 public class User {
 	
+	/**
+	 * Class for User
+	 * 
+	 */
+	
 	private String name;
 	private List<Post> posts = new ArrayList<Post>();
 	private List<User> followingUsers = new ArrayList<User>();

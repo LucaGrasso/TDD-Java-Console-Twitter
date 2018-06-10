@@ -10,7 +10,7 @@ import com.lg.ctwit.tools.DefaultAppConsole;
 import com.lg.ctwit.tools.TimerOnSeconds;
 
 /**
- * Console Twitter App - Main class.
+ * Java Console Twitter - Main class.
  * Start Point.
  * 
  * lucaG
@@ -23,6 +23,7 @@ public class App {
 	/** option for console e input
 	* 
 	* lucaG
+	* 
 	*/
 	
 	private static final String PROMPT = ">";
