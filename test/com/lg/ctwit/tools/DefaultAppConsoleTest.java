@@ -32,8 +32,7 @@ public class DefaultAppConsoleTest implements WithAssertions{
 	private PrintStream printStream;
     private TimerOnSeconds timerOnSeconds = new TimerOnSeconds();
     private ByteArrayOutputStream baos;
-    @Mock private Post post;
-    
+    @Mock private Post post;  
    
 	@BeforeEach
 	@DisplayName("BeforeEach setUp after Mock")
@@ -42,9 +41,7 @@ public class DefaultAppConsoleTest implements WithAssertions{
 		
 		baos = new ByteArrayOutputStream();
 		printStream = new PrintStream(baos);
-		printer = new DefaultAppConsole(printStream, timerOnSeconds);
-		
-		
+		printer = new DefaultAppConsole(printStream, timerOnSeconds);				
 	}
 	
 	@Test
@@ -66,13 +63,9 @@ public class DefaultAppConsoleTest implements WithAssertions{
 		when(post.getUserName()).thenReturn("Alice");
 		when(post.getMessage()).thenReturn("I love the weather today");
 		assertEquals("Alice", post.getUserName());
-		assertEquals("I love the weather today", post.getMessage());
-		
+		assertEquals("I love the weather today", post.getMessage());		
 	}
-	
-	
-	
-	
+		
 	@Test
     @DisplayName("Test Display Post For Wall")
 	public void testDisplayPostForWall() throws UnsupportedEncodingException {	
@@ -104,7 +97,6 @@ public class DefaultAppConsoleTest implements WithAssertions{
 		printer.displayPostForUser(post);
 		
 		String expectedResult = "I love the weather today (5 minutes ago)";
-		//assertEquals(expectedResult + "\n", baos.toString("UTF-8"));
 		assertEquals(expectedResult + System.getProperty("line.separator"), baos.toString("UTF-8"));
 	}
 
