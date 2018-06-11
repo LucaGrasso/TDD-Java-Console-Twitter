@@ -3,8 +3,10 @@ A console-based social networking application (similar to Twitter).
 
 
 Technical instructions:
+
+
 MacOs:
-With Mac:
+
 ```sh
 $ open Terminal
 $ cd \...\TDD-Java-Console-Twitter\bin\com\lg\ctwit
