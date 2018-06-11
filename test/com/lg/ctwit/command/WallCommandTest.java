@@ -99,7 +99,7 @@ public class WallCommandTest {
 		verify(spyuser).getFollowingUsers();
 		verify(spyuser2).getPosts();
 		String result = baos.toString("UTF-8");
-		String expectedResult = "Charlie - I'm in New York today! Anyone want to have a coffee? (2 seconds ago)\nAlice - I love the weather today (5 minutes ago)\n";
+		String expectedResult = "Charlie - I'm in New York today! Anyone want to have a coffee? (2 seconds ago)" + System.getProperty("line.separator") + "Alice - I love the weather today (5 minutes ago)" + System.getProperty("line.separator");
 		assertEquals(expectedResult, result);
 		
 		baos.reset();
@@ -111,7 +111,10 @@ public class WallCommandTest {
 		command.execute(COMMAND);
 		
 		result = baos.toString("UTF-8");
-		expectedResult = "Charlie - I'm in New York today! Anyone want to have a coffee? (15 seconds ago)\nBob - Good game though. (1 minute ago)\nBob - Damn! we lost. (2 minutes ago)\nAlice - I love the weather today (5 minutes ago)\n";
+		expectedResult = "Charlie - I'm in New York today! Anyone want to have a coffee? (15 seconds ago)" + System.getProperty("line.separator") + 
+						 "Bob - Good game though. (1 minute ago)" + System.getProperty("line.separator") +
+						 "Bob - Damn! we lost. (2 minutes ago)" + System.getProperty("line.separator") +
+						 "Alice - I love the weather today (5 minutes ago)" + System.getProperty("line.separator");
 		assertEquals(expectedResult, result);
 	}
 }

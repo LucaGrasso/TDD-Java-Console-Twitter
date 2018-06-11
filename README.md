@@ -1,11 +1,22 @@
 # TDD-Java-Console-Twitter
 A console-based social networking application (similar to Twitter).
 
-For Execute:
+Technical instructions:
+MacOs:
 	1) With Mac: open Terminal
 	2) go to folder TDD-Java-Console-Twitter\bin\com\lg\ctwit
 	3) use this command JAVA -JAR ctwit.jar
 	4) Command Exit for close.
+
+Windows:
+	1) open Command Prompt
+	2) go to folder TDD-Java-Console-Twitter\bin\com\lg\ctwit
+	3) use this command JAVA -JAR ctwit.jar
+	4) Command Exit for close.
+
+My IDE is Eclipse.
+
+with "System.getProperty("line.separator")" the Test work fine with MacOs and Windows
 
 Dependencies for developer:
 - JavaSE-1.8

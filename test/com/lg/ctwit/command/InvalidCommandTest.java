@@ -59,7 +59,7 @@ public class InvalidCommandTest {
 		command.execute(USER);
 
 		String result = baos.toString("UTF-8");
-		String expectedResult = String.format("Command: %s is invalid!\n", USER);
+		String expectedResult = String.format("Command: %s is invalid!" + System.getProperty("line.separator"), USER);
 		assertEquals(expectedResult, result);
 	}
 }

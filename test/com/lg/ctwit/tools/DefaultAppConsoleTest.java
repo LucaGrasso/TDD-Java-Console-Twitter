@@ -85,7 +85,7 @@ public class DefaultAppConsoleTest implements WithAssertions{
 		post = new Post("Alice", "I love the weather today", new Date(System.currentTimeMillis() - 5 * 60 * 1000L));
 		printer.displayPostForWall(post);
 		
-		String expectedResult = "Alice - I love the weather today (5 minutes ago)\n";
+		String expectedResult = "Alice - I love the weather today (5 minutes ago)" + System.getProperty("line.separator");
 		assertEquals(expectedResult , baos.toString("UTF-8"));		
 	}
 
@@ -104,7 +104,8 @@ public class DefaultAppConsoleTest implements WithAssertions{
 		printer.displayPostForUser(post);
 		
 		String expectedResult = "I love the weather today (5 minutes ago)";
-		assertEquals(expectedResult + "\n", baos.toString("UTF-8"));
+		//assertEquals(expectedResult + "\n", baos.toString("UTF-8"));
+		assertEquals(expectedResult + System.getProperty("line.separator"), baos.toString("UTF-8"));
 	}
 
 	@Test
@@ -112,6 +113,6 @@ public class DefaultAppConsoleTest implements WithAssertions{
 	public void testDisplayMessage() throws UnsupportedEncodingException {
 		String message = "Good evening";
 		printer.displayMessage(message);
-		assertEquals(message + "\n", baos.toString("UTF-8"));
+		assertEquals(message + System.getProperty("line.separator"), baos.toString("UTF-8"));
 	}
 }

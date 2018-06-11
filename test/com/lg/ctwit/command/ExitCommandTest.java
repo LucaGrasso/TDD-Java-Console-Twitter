@@ -72,7 +72,7 @@ public class ExitCommandTest {
             int status = e.getStatus();
             assertEquals(0, status);
             String result = baos.toString("UTF-8");
-    		String expectedResult = "Bye!\n";
+    		String expectedResult = "Bye!" + System.getProperty("line.separator");
     		assertEquals(expectedResult, result);
         }	
 	}

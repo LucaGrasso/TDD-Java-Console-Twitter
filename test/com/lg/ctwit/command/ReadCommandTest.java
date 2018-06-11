@@ -87,7 +87,7 @@ public class ReadCommandTest {
 		verify(spyUser).getPosts();
 
 		String result = baos.toString("UTF-8");
-		String expectedResult = "Good game though. (1 minute ago)\nDamn! We lost! (10 minutes ago)\n";
+		String expectedResult = "Good game though. (1 minute ago)" + System.getProperty("line.separator") + "Damn! We lost! (10 minutes ago)" + System.getProperty("line.separator");
 		assertEquals(expectedResult, result);
 	}
 }
