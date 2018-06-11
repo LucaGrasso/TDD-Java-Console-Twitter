@@ -34,8 +34,7 @@ public class TimerOnSecondsTest {
 		String spyresponse = formatter.formatTimeDifference(spydate);
 		
 		assertEquals("(0 second ago)", response);
-		assertEquals("(26 seconds ago)", spyresponse);
-	
+		assertEquals("(26 seconds ago)", spyresponse);	
 	}
 
 	@Test
@@ -87,6 +86,5 @@ public class TimerOnSecondsTest {
 		
 		assertEquals("(1 day ago)", response);
 		assertEquals("(2 days ago)", spyresponse);
-
 	}
 }
