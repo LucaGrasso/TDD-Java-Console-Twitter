@@ -102,6 +102,8 @@ public class WallCommandTest {
 		String expectedResult = "Charlie - I'm in New York today! Anyone want to have a coffee? (2 seconds ago)" + System.getProperty("line.separator") + "Alice - I love the weather today (5 minutes ago)" + System.getProperty("line.separator");
 		assertEquals(expectedResult, result);
 		
+		// This part of code is useless for testing but i want to try a long wall for futures studies
+		
 		baos.reset();
 
 		spyuser.setPosts(Arrays.asList(new Post(USER, "I'm in New York today! Anyone want to have a coffee?", new Date(System.currentTimeMillis() - 15 * 1000L))));

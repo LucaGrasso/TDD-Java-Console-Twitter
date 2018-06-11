@@ -44,18 +44,20 @@ public class DefaultAppConsoleTest implements WithAssertions{
 		printer = new DefaultAppConsole(printStream, timerOnSeconds);				
 	}
 	
-	@Test
-    @DisplayName("Test don't return Null")
-    public void shouldInjectMocks() {
-		assertThat(DefaultAppConsole.class).isPublic();
-		
-        assertThat(printer).isNotNull();
-        assertThat(printStream).isNotNull();
-        assertThat(timerOnSeconds).isNotNull();
-        assertThat(baos).isNotNull();
-        assertThat(post).isNotNull();
-	}
-		
+   /*Useless ATM
+    * 
+    * @Test
+    *@DisplayName("Test don't return Null")
+    *public void shouldInjectMocks() {
+	*	assertThat(DefaultAppConsole.class).isPublic();
+	*	
+    *   assertThat(printer).isNotNull();
+    *   assertThat(printStream).isNotNull();
+    *   assertThat(timerOnSeconds).isNotNull();
+    *   assertThat(baos).isNotNull();
+    *    assertThat(post).isNotNull();
+	*}
+	*/	
 	@Test
 	@DisplayName("Simple Mock Post Test")
 	public void testPostObject() {

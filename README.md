@@ -14,6 +14,7 @@ $ JAVA -JAR ctwit.jar
 $ Exit (for close.)
 ```
 Windows:
+
 ```sh
 $ open Command Prompt
 $ cd \...\TDD-Java-Console-Twitter\bin\com\lg\ctwit
@@ -26,15 +27,17 @@ My IDE is Eclipse.
 
 with "System.getProperty("line.separator")" the Test work fine with MacOs and Windows
 
-# Dependencies info for developer:
-- JavaSE-1.8
-- Maven Dependencies 
+### Dependencies info for developer:
 
-	1) Mockito 2.18.3
+- JavaSE-1.8
+
+- Maven Dependencies
+ 
+- Mockito 2.18.3
 	
-	2) Junit5 
+- Junit5 
 	
-	3) assertj 3.1.0
+- Assertj 3.1.0
 	
 
 Exercise
@@ -86,11 +89,8 @@ Details
 are not part of the commands; commands always start with the user’s name.
 
 	○ posting: <user name> -> <message>
-
 	○ reading: <user name>
-
 	○ following: <user name> follows <another user>
-
 	○ wall: <user name> wall
 
 ● Don't worry about handling any exceptions or invalid commands. Assume that the user will 
