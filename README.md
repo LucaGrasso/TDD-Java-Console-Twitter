@@ -29,9 +29,9 @@ with "System.getProperty("line.separator")" the Test work fine with MacOs and Wi
 # Dependencies info for developer:
 - JavaSE-1.8
 - Maven Dependencies 
-	1. Mockito 2.18.3
-	2. Junit5 
-	3. assertj 3.1.0
+	1 Mockito 2.18.3
+	2 Junit5 
+	3 assertj 3.1.0
 
 Exercise
 
