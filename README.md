@@ -1,24 +1,30 @@
 # TDD-Java-Console-Twitter
 A console-based social networking application (similar to Twitter).
 
+
 Technical instructions:
 MacOs:
-	1) With Mac: open Terminal
-	2) go to folder TDD-Java-Console-Twitter\bin\com\lg\ctwit
-	3) use this command JAVA -JAR ctwit.jar
-	4) Command Exit for close.
-
+With Mac:
+```sh
+$ open Terminal
+$ cd \...\TDD-Java-Console-Twitter\bin\com\lg\ctwit
+$ JAVA -JAR ctwit.jar
+$ Exit (for close.)
+```
 Windows:
-	1) open Command Prompt
-	2) go to folder TDD-Java-Console-Twitter\bin\com\lg\ctwit
-	3) use this command JAVA -JAR ctwit.jar
-	4) Command Exit for close.
+```sh
+$ open Command Prompt
+$ cd \...\TDD-Java-Console-Twitter\bin\com\lg\ctwit
+$ JAVA -JAR ctwit.jar
+$ Exit (for close.)
+```
+## Developer
 
 My IDE is Eclipse.
 
 with "System.getProperty("line.separator")" the Test work fine with MacOs and Windows
 
-Dependencies for developer:
+# Dependencies info for developer:
 - JavaSE-1.8
 - Maven Dependencies 
 	1. Mockito 2.18.3
